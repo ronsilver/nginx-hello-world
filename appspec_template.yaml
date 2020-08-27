@@ -6,5 +6,5 @@ Resources:
         TaskDefinition: "$TASK_DEFINITION"
         LoadBalancerInfo:
           ContainerName: "$CONTAINER_NAME"
-          ContainerPort: "8000"
+          ContainerPort: "3000"
         PlatformVersion: "1.4.0"
