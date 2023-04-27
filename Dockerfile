@@ -1,6 +1,5 @@
-FROM nginx:mainline-alpine
-RUN rm /etc/nginx/conf.d/*
-ADD hello.conf /etc/nginx/conf.d/
-ADD index.html /usr/share/nginx/html/
+FROM nginx:stable-alpine
 
-EXPOSE 5000
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 8080
